@@ -1,6 +1,6 @@
-import { useState } from "react";
-import BookCreate from "./components/BookCreate";
-import BookList from "./components/BookList";
+import { useState } from 'react';
+import BookCreate from './components/BookCreate';
+import BookList from './components/BookList';
 
 function App() {
     const [books, setBooks] = useState([]);
@@ -16,7 +16,7 @@ function App() {
     const editBookById = (id, newTitle) => {
         const updatedBooks = books.map((book) => {
             if (book.id === id) {
-                return { ...book, newTitle };
+                return { ...book, title: newTitle };
             }
 
             return book;
