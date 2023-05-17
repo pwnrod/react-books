@@ -25,7 +25,8 @@ function BookShow({ book, onDelete, onEdit }) {
 
     return (
         <div className="book-show">
-            {content}
+            <img alt="books" src={`https://picsum.photos/seed/${book.id}/300/300`} />
+            <div>{content}</div>
             <div className="actions">
                 <button className="edit" onClick={handleEditClick}>
                     Edit
